@@ -6,9 +6,9 @@ open System.Diagnostics
 let main argv = 
     
     let source = 
-        //Array.init 50000 <| fun _ -> Guid.NewGuid().ToByteArray()
-        Array.init 10000 <| fun _ -> Guid.NewGuid().ToByteArray()
-        |> Array.replicate 1000
+        Array.init 1000 <| fun _ -> Guid.NewGuid().ToString() // ToByteArray()
+        //Array.init 10000 <| fun _ -> Guid.NewGuid().ToByteArray()
+        |> Array.replicate 50000
         |> Array.concat
     
     printfn "Source count = %d" source.Length 
