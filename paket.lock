@@ -1,0 +1,6 @@
+NUGET
+  remote: https://www.nuget.org/api/v2
+  specs:
+    CardinalityEstimation (1.2)
+      murmurhash (>= 1.0)
+    murmurhash (1.0)
